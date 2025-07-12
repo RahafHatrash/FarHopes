@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: da47ff5c6d036ac4bbe5104852cd1dea
+guid: acbed61022be62541a02b5c061f7fff1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -493756936001709916
-    second: Full obstacle_0
-  - first:
-      213: -5426861353153614928
-    second: Full obstacle_1
+      213: -1869492064128092055
+    second: PauseMenu_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,19 +97,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -129,35 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Full obstacle_0
+      name: PauseMenu_0
       rect:
         serializedVersion: 2
-        x: 903
-        y: 323
-        width: 171
-        height: 1011
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 150, z: 0, w: 141}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4a89b38cea2d529f0800000000000000
-      internalID: -493756936001709916
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Full obstacle_1
-      rect:
-        serializedVersion: 2
-        x: 1063
-        y: 899
-        width: 14
-        height: 12
+        x: 0
+        y: 81
+        width: 663
+        height: 790
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0bbabff1a5aefa4b0800000000000000
-      internalID: -5426861353153614928
+      spriteID: 968bb376fda3e06e0800000000000000
+      internalID: -1869492064128092055
       vertices: []
       indices: 
       edges: []
@@ -176,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c1f06810630f0d342a22b0d2d5e3e508
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -185,9 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Full obstacle_0: -493756936001709916
-      Full obstacle_1: -5426861353153614928
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
