@@ -19,7 +19,6 @@ public class SizeSwapper : MonoBehaviour
 
     void Start()
     {
-        // البداية نفس الحجم
         mouseA.localScale = defaultSize;
         mouseB.localScale = defaultSize;
 
@@ -29,11 +28,12 @@ public class SizeSwapper : MonoBehaviour
 
     void Update()
     {
-        // تحريك الحجم تدريجياً
+        if (pause.isPaused)
+            return;
+
         mouseA.localScale = Vector3.Lerp(mouseA.localScale, targetScaleA, Time.deltaTime * smoothSpeed);
         mouseB.localScale = Vector3.Lerp(mouseB.localScale, targetScaleB, Time.deltaTime * smoothSpeed);
 
-        // التبديل عند الضغط
         if ((Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1)) && !hasSwapped)
         {
             isASmall = true;

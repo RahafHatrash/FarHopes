@@ -1,14 +1,15 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PauseController : MonoBehaviour
+public class pause : MonoBehaviour
 {
-    public GameObject pauseMenu; // حطي فيه الـ Panel اللي يحتوي كل شيء
-    private bool isPaused = false;
+    public static bool isPaused = false;
+
+    public GameObject pauseMenu;
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape)) // أو أي زر تبغيه للبوز
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (isPaused)
                 ResumeGame();
@@ -31,14 +32,14 @@ public class PauseController : MonoBehaviour
         isPaused = false;
     }
 
-    public void GoToMainMenu()
+    public void LoadMainMenu()
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
     }
-
-    public void OpenSettings()
+    public void LoadSetting()
     {
-        // تفتحي صفحة الإعدادات إذا عندك
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Settings");
     }
 }
