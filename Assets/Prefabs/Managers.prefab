@@ -237,7 +237,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7868888480192434415}
-  - component: {fileID: 4293875910680261389}
+  - component: {fileID: 2872958151985837342}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -260,7 +260,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3665633111897113836}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4293875910680261389
+--- !u!114 &2872958151985837342
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -272,3 +272,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 606d7a6b52009a4469e5ecd822ec7099, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pressScale: 0.98
+  animationDuration: 0.035

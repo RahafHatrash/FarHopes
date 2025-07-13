@@ -16,6 +16,7 @@ public class AudioManager : MonoBehaviour
 
     public void PlayClickSound()
     {
-        audioSource.PlayOneShot(buttonClickSound);
+        if (buttonClickSound != null)
+            audioSource.PlayOneShot(buttonClickSound);
     }
 }

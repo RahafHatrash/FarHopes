@@ -206,6 +206,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &278506380 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2600946572002486222, guid: 9e66aee977cc7c44a9aa4e32d8de1c10, type: 3}
+  m_PrefabInstance: {fileID: 8621770513485549970}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f20f7ece6caa37948b48c8f269da5898, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &304840401
 GameObject:
   m_ObjectHideFlags: 0
@@ -820,9 +831,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.7660377, g: 0.72123176, b: 0.72123176, a: 1}
+    m_PressedColor: {r: 0.5320754, g: 0.51701665, b: 0.51701665, a: 1}
+    m_SelectedColor: {r: 0.7433963, g: 0.7111357, b: 0.7111357, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -904,8 +915,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e26b7cd0cc82aa84997de9d72a73bc6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pressAmount: 0.95
-  returnSpeed: 10
 --- !u!1 &1282267575
 GameObject:
   m_ObjectHideFlags: 0
@@ -1103,7 +1112,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.7647059, g: 0.72156864, b: 0.72156864, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1128,6 +1137,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1612183425}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: LoadSettingsScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 278506380}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlayClickSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1236,7 +1257,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.7647059, g: 0.72156864, b: 0.72156864, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1744,9 +1765,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4293875910680261389, guid: 9e66aee977cc7c44a9aa4e32d8de1c10, type: 3}
+      propertyPath: pressScale
+      value: -0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293875910680261389, guid: 9e66aee977cc7c44a9aa4e32d8de1c10, type: 3}
+      propertyPath: animationDuration
+      value: 0.23
+      objectReference: {fileID: 0}
     - target: {fileID: 5484012518287233801, guid: 9e66aee977cc7c44a9aa4e32d8de1c10, type: 3}
       propertyPath: m_Name
       value: Managers
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114242362930653252, guid: 9e66aee977cc7c44a9aa4e32d8de1c10, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -27.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114242362930653252, guid: 9e66aee977cc7c44a9aa4e32d8de1c10, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.57
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
