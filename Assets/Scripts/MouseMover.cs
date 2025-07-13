@@ -36,7 +36,8 @@ public class MouseMover : MonoBehaviour
 {
     if (other.gameObject.layer == LayerMask.NameToLayer("Obstacle"))
     {
-        ScoreManager.Instance.GameOver();
+       GameManager.Instance.GameOver();
+
     }
 }
 

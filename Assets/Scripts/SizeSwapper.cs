@@ -28,8 +28,8 @@ public class SizeSwapper : MonoBehaviour
 
     void Update()
     {
-        if (pause.isPaused)
-            return;
+       if (GameManager.Instance != null && GameManager.isPaused)
+           return;
 
         mouseA.localScale = Vector3.Lerp(mouseA.localScale, targetScaleA, Time.deltaTime * smoothSpeed);
         mouseB.localScale = Vector3.Lerp(mouseB.localScale, targetScaleB, Time.deltaTime * smoothSpeed);
