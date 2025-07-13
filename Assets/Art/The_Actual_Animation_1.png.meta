@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: effe8927aef6a594cbbceca70dc37373
+guid: 5ad977374dd6c064d9f1823d5bb756c3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7323713816215469434
-    second: Pause&ScoreUI_0
+      213: -8258575432908404396
+    second: The_Actual_Animation_1_0
+  - first:
+      213: -4228690360591031773
+    second: The_Actual_Animation_1_1
+  - first:
+      213: 6610649352935435062
+    second: The_Actual_Animation_1_2
+  - first:
+      213: 7110043366674316770
+    second: The_Actual_Animation_1_3
+  - first:
+      213: 6602166969395211560
+    second: The_Actual_Animation_1_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,19 +109,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -126,23 +125,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pause&ScoreUI_0
+      name: The_Actual_Animation_1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 742
-        height: 809
+        x: 381
+        y: 96
+        width: 873
+        height: 1515
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a7db424c9ee03a560800000000000000
-      internalID: 7323713816215469434
+      spriteID: 4590aba4665a36d80800000000000000
+      internalID: -8258575432908404396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Actual_Animation_1_1
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 100
+        width: 880
+        height: 1495
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3226ad7858ca055c0800000000000000
+      internalID: -4228690360591031773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Actual_Animation_1_2
+      rect:
+        serializedVersion: 2
+        x: 2537
+        y: 97
+        width: 877
+        height: 1514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63be160df8ebdbb50800000000000000
+      internalID: 6610649352935435062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Actual_Animation_1_4
+      rect:
+        serializedVersion: 2
+        x: 3630
+        y: 96
+        width: 870
+        height: 1491
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82d6e9ef0eb9f9b50800000000000000
+      internalID: 6602166969395211560
       vertices: []
       indices: 
       edges: []
@@ -151,7 +216,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: da07361504cdd8e4194f600d9a53c61b
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +226,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Pause&ScoreUI_0: 7323713816215469434
+      The_Actual_Animation_1_5: -991642865
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
