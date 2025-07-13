@@ -56,6 +56,7 @@ public class MouseMover : MonoBehaviour
         score++;
     }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
    void OnCollisionEnter2D(Collision2D other)
 {
     if (other.gameObject.layer == LayerMask.NameToLayer("Obstacle"))
@@ -66,6 +67,8 @@ public class MouseMover : MonoBehaviour
 }
 
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 }

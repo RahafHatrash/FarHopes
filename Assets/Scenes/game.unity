@@ -1706,7 +1706,11 @@ CanvasRenderer:
   m_GameObject: {fileID: 695379014}
   m_CullTransparentMesh: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!1 &814402746
+=======
+--- !u!1 &728200665
+>>>>>>> Stashed changes
 =======
 --- !u!1 &728200665
 >>>>>>> Stashed changes
@@ -1718,24 +1722,31 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - component: {fileID: 814402747}
   - component: {fileID: 814402749}
   - component: {fileID: 814402748}
   m_Layer: 5
   m_Name: GameBg
 =======
+=======
+>>>>>>> Stashed changes
   - component: {fileID: 728200667}
   - component: {fileID: 728200666}
   - component: {fileID: 728200669}
   - component: {fileID: 728200668}
   m_Layer: 0
   m_Name: PlayerController
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 --- !u!224 &814402747
 RectTransform:
@@ -1760,11 +1771,15 @@ RectTransform:
 =======
 --- !u!114 &728200666
 >>>>>>> Stashed changes
+=======
+--- !u!114 &728200666
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   m_GameObject: {fileID: 814402746}
   m_Enabled: 1
@@ -1793,6 +1808,8 @@ MonoBehaviour:
 --- !u!222 &814402749
 CanvasRenderer:
 =======
+=======
+>>>>>>> Stashed changes
   m_GameObject: {fileID: 728200665}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1806,15 +1823,21 @@ CanvasRenderer:
   rightRat: {fileID: 1859011045}
 --- !u!4 &728200667
 Transform:
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 814402746}
   m_CullTransparentMesh: 1
 =======
+=======
+>>>>>>> Stashed changes
   m_GameObject: {fileID: 728200665}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -1905,6 +1928,9 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!1 &888849463
 GameObject:
@@ -3463,7 +3489,10 @@ CanvasRenderer:
   m_GameObject: {fileID: 1697919000}
   m_CullTransparentMesh: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 --- !u!1 &1703267325
 GameObject:
   m_ObjectHideFlags: 0
@@ -4200,6 +4229,9 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!1 &1889813945
 GameObject:
@@ -4687,11 +4719,14 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - {fileID: 1692759756}
   - {fileID: 1893636599}
   - {fileID: 191552820}
   - {fileID: 502524763}
 =======
+=======
+>>>>>>> Stashed changes
   - {fileID: 554619969}
   - {fileID: 1782901461}
   - {fileID: 1893636599}
@@ -4704,4 +4739,7 @@ SceneRoots:
   - {fileID: 290384169}
   - {fileID: 1703267328}
   - {fileID: 728200667}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
