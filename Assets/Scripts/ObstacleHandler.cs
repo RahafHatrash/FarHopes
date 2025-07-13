@@ -1,12 +1,12 @@
 using UnityEngine;
 
-public class RatCollider : MonoBehaviour
+public class ObstacleHandler : MonoBehaviour
 {
-    /*void OnCollisionEnter2D(Collision2D other)
+    void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Obstacle"))
         {
             GameManager.Instance.GameOver();
         }
-    }*/
-}
+    }
+}        

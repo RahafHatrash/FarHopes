@@ -101,4 +101,18 @@ public class MouseMover : MonoBehaviour
         if (bottomGroundCheck != null)
             Gizmos.DrawWireSphere(bottomGroundCheck.position, groundCheckRadius);
     }
+    void OnCollisionEnter2D(Collision2D other)
+{
+    if (other.gameObject.layer == LayerMask.NameToLayer("Obstacle"))
+    {
+        Debug.Log("Hit Obstacle!");
+
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.GameOver(); 
+        }
+    }
+}
+
+
 }

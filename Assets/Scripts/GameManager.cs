@@ -21,6 +21,19 @@ public class GameManager : MonoBehaviour
     private static int sessionHighScore = 0;
     private bool isGameOver = false;
 
+    [Header("Size Swapper Settings")]
+    public Transform mouseA;
+    public Transform mouseB;
+    public Vector3 defaultSize = new Vector3(1f, 1f, 1f);
+    public Vector3 bigSize = new Vector3(1.5f, 1.5f, 1f);
+    public Vector3 smallSize = new Vector3(0.8f, 0.8f, 1f);
+    public float smoothSpeed = 5f;
+
+    private bool hasSwapped = false;
+    private bool isASmall = true;
+    private Vector3 targetScaleA;
+    private Vector3 targetScaleB;
+
     void Awake()
     {
         if (Instance == null)
@@ -33,11 +46,25 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    void Start()
+    {
+        // Initialize mice sizes
+        if (mouseA != null && mouseB != null)
+        {
+            mouseA.localScale = defaultSize;
+            mouseB.localScale = defaultSize;
+            targetScaleA = defaultSize;
+            targetScaleB = defaultSize;
+        }
+    }
+
     void Update()
     {
         HandlePauseInput();
-        HandleScoreUpdate();
         HandleRestartShortcut();
+        HandleScoreUpdate();
+        AnimateSizeTransition();
+        HandleSizeSwapping();
     }
 
     void HandlePauseInput()
@@ -61,12 +88,52 @@ public class GameManager : MonoBehaviour
 
     void HandleScoreUpdate()
     {
-        if (isGameOver || isPaused) return;
-
+        // if (isGameOver || isPaused) return;
+         if (isGameOver ) return;
         currentScore += scoreSpeed * Time.deltaTime;
 
         if (scoreText != null)
-            scoreText.text = "Score: " + Mathf.FloorToInt(currentScore).ToString();
+            scoreText.text = Mathf.FloorToInt(currentScore).ToString();
+    }
+
+    void HandleSizeSwapping()
+    {
+        if (isPaused || isGameOver || mouseA == null || mouseB == null) return;
+
+        if ((Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1)) && !hasSwapped)
+        {
+            isASmall = true;
+            SetTargets();
+            hasSwapped = true;
+        }
+        else if ((Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1)) && hasSwapped)
+        {
+            isASmall = !isASmall;
+            SetTargets();
+        }
+    }
+
+    void AnimateSizeTransition()
+    {
+        if (mouseA != null && mouseB != null)
+        {
+            mouseA.localScale = Vector3.Lerp(mouseA.localScale, targetScaleA, Time.deltaTime * smoothSpeed);
+            mouseB.localScale = Vector3.Lerp(mouseB.localScale, targetScaleB, Time.deltaTime * smoothSpeed);
+        }
+    }
+
+    void SetTargets()
+    {
+        if (isASmall)
+        {
+            targetScaleA = smallSize;
+            targetScaleB = bigSize;
+        }
+        else
+        {
+            targetScaleA = bigSize;
+            targetScaleB = smallSize;
+        }
     }
 
     public void PauseGame()
@@ -122,10 +189,12 @@ public class GameManager : MonoBehaviour
     }
 
     public void LoadMainMenu()
-    {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene("MainMenu");
-    }
+{
+    Time.timeScale = 1f;
+    sessionHighScore = 0;  
+    SceneManager.LoadScene("MainMenu");
+}
+
 
     public void QuitGame()
     {
