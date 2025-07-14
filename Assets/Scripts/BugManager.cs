@@ -2,25 +2,28 @@ using UnityEngine;
 
 public class BugManager : MonoBehaviour
 {
-    public GameObject bugPrefab;
-    public int maxBugs = 2; // عدد الحشرات المطلوب فقط
-    public float spawnRadius = 4f;
-
-    private int spawnedBugs = 0;
+    public GameObject antPrefab;
+    public int antCount = 5;
+    public float spawnRadius = 2f;
+    public float spawnDelay = 0.2f;
 
     void Start()
     {
-        for (int i = 0; i < maxBugs; i++)
-        {
-            SpawnBug();
-        }
+        StartCoroutine(SpawnAnts());
     }
 
-    void SpawnBug()
+    System.Collections.IEnumerator SpawnAnts()
     {
-        Vector2 spawnPos = (Vector2)transform.position + Random.insideUnitCircle * spawnRadius;
-        GameObject bug = Instantiate(bugPrefab, spawnPos, Quaternion.identity);
+        for (int i = 0; i < antCount; i++)
+        {
+            Vector2 spawnPos = (Vector2)transform.position + Random.insideUnitCircle * spawnRadius;
+            GameObject ant = Instantiate(antPrefab, spawnPos, Quaternion.identity);
 
-        spawnedBugs++;
+            // Optionally face ants in random direction
+            float flipX = Random.value > 0.5f ? 1 : -1;
+            ant.transform.localScale = new Vector3(flipX, 1, 1);
+
+            yield return new WaitForSeconds(spawnDelay);
+        }
     }
 }

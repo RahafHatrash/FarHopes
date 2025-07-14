@@ -1777,6 +1777,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Managers
       objectReference: {fileID: 0}
+    - target: {fileID: 6588279538539084852, guid: 9e66aee977cc7c44a9aa4e32d8de1c10, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6588279538539084852, guid: 9e66aee977cc7c44a9aa4e32d8de1c10, type: 3}
+      propertyPath: m_Volume
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6588279538539084852, guid: 9e66aee977cc7c44a9aa4e32d8de1c10, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 153ebd38810bfef47a6361e59741aa2a, type: 3}
+    - target: {fileID: 6588279538539084852, guid: 9e66aee977cc7c44a9aa4e32d8de1c10, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 153ebd38810bfef47a6361e59741aa2a, type: 3}
+    - target: {fileID: 6588279538539084852, guid: 9e66aee977cc7c44a9aa4e32d8de1c10, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6588279538539084852, guid: 9e66aee977cc7c44a9aa4e32d8de1c10, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0.741
+      objectReference: {fileID: 0}
     - target: {fileID: 8114242362930653252, guid: 9e66aee977cc7c44a9aa4e32d8de1c10, type: 3}
       propertyPath: m_LocalPosition.x
       value: -27.71

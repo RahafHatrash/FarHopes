@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
@@ -89,7 +89,7 @@ public class GameManager : MonoBehaviour
     void HandleScoreUpdate()
     {
         // if (isGameOver || isPaused) return;
-         if (isGameOver ) return;
+        if (isGameOver) return;
         currentScore += scoreSpeed * Time.deltaTime;
 
         if (scoreText != null)
@@ -189,11 +189,11 @@ public class GameManager : MonoBehaviour
     }
 
     public void LoadMainMenu()
-{
-    Time.timeScale = 1f;
-    sessionHighScore = 0;  
-    SceneManager.LoadScene("MainMenu");
-}
+    {
+        Time.timeScale = 1f;
+        sessionHighScore = 0;
+        SceneManager.LoadScene("MainMenu");
+    }
 
 
     public void QuitGame()

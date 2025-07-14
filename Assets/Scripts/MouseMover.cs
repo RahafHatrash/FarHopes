@@ -29,6 +29,9 @@ public class MouseMover : MonoBehaviour
     public float groundCheckRadius = 0.1f;
     public LayerMask groundLayer;
 
+    [Header("Speed Acceleration")]
+    public float speedIncreaseRate = 0.1f; // units per second
+
 
     void Start()
     {
@@ -46,7 +49,9 @@ public class MouseMover : MonoBehaviour
             audioSource.volume = audioVolume;
 
         // Move the whole player object forward
-        currentSpeed = baseSpeed + (score * 3);
+        baseSpeed += speedIncreaseRate * Time.deltaTime; // gradual acceleration
+        currentSpeed = baseSpeed + (score * 3); // still supports score scaling
+
         transform.Translate(Vector3.right * currentSpeed * Time.deltaTime);
 
         // Handle jump
