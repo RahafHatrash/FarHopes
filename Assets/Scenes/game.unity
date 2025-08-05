@@ -930,6 +930,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Managers
       objectReference: {fileID: 0}
+    - target: {fileID: 5484012518287233801, guid: 9e66aee977cc7c44a9aa4e32d8de1c10, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8404252762948937417, guid: 9e66aee977cc7c44a9aa4e32d8de1c10, type: 3}
       propertyPath: mouseA
       value: 
